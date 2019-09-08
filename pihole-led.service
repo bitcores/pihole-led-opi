@@ -1,0 +1,12 @@
+[Unit]
+Description=LED Indicator for Pihole
+After=networking.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/home/taulin/scripts/pihole-led-blink.sh
+
+[Install]
+WantedBy=default.target
