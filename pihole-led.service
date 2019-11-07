@@ -6,7 +6,8 @@ After=networking.service
 Type=simple
 Restart=always
 RestartSec=1
-ExecStart=/home/taulin/scripts/pihole-led-blink.sh
+### Edit the following line to point to pihole-led-blink.sh ### 
+ExecStart=<path to pihole-led-blink.sh>
 
 [Install]
 WantedBy=default.target
